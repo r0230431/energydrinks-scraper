@@ -1,0 +1,51 @@
+---
+import DrinkCard from "../components/DrinkCard.astro";
+import { findEnergyDrinkWithLowestPricePerLiter, showPromoProducts, getEnergyDrinksFromFile } from "../helpers/helpers.js";
+import type { EnergyDrink } from "../models/energyDrink";
+
+let energyDrinksFromFile: EnergyDrink[] = await getEnergyDrinksFromFile();
+const promoDrinks: EnergyDrink[] = showPromoProducts(energyDrinksFromFile);
+
+---
+
+<div class="scroll-mt-20">
+    <div class="container flex flex-col justify-center items-center mx-auto py-12 px-6">
+        <h1 id="lowestPriceDrink" class="my-4 text-4xl font-bold tracking-tight text-heading text-pink-600 md:text-5xl lg:text-6xl p-8 text-center">
+            Lowest price energy drink
+        </h1>
+            {(energyDrinksFromFile !== null && energyDrinksFromFile.length !== 0)
+                ?
+                    (
+                        <DrinkCard energyDrink={findEnergyDrinkWithLowestPricePerLiter(energyDrinksFromFile)} />
+                    )
+                :
+                    (
+                        <div id="noDrinksAlert" class="w-full flex justify-center items-center p-4 my-4 text-sm text-fg-danger-strong rounded-base bg-danger-soft" role="alert">
+                            <p class="text-lg">No energy drinks found.</p>
+                        </div>
+                    )
+            }
+
+        
+
+        <h1 id="promoDrinks" class="my-4 text-4xl font-bold tracking-tight text-heading text-pink-600 md:text-5xl lg:text-6xl p-8 text-center">
+            Energy drink promotions
+        </h1>
+        <div id="drinks" class="flex flex-col md:flex-row md:flex-wrap gap-6 justify-center">
+            {(promoDrinks !== null && promoDrinks.length !== 0) &&
+                (
+                    promoDrinks.map(drink => (
+                        <DrinkCard energyDrink={drink} />
+                    ))
+                )
+            }
+        </div>
+            {(promoDrinks === null || promoDrinks.length === 0) &&
+                (
+                    <div id="noDrinksAlert" class="w-full flex justify-center items-center p-4 my-4 text-sm text-fg-danger-strong rounded-base bg-danger-soft" role="alert">
+                        <p class="text-lg">No energy drink promotions available.</p>
+                    </div>
+                )
+            }
+    </div>
+</div>

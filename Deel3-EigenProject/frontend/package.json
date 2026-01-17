@@ -1,0 +1,21 @@
+{
+  "name": "frontend",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "astro": "^5.16.11",
+    "flowbite": "^4.0.1",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}

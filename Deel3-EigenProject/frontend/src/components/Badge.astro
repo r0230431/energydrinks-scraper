@@ -1,0 +1,14 @@
+---
+import { bgClasses500, textClasses } from '../helpers/colors.ts';
+
+const icon: HTMLElement | null = Astro.props.icon;
+const text: string = Astro.props.text || "";
+const bgColor: 'gray' | 'red' | 'yellow' | 'green' | 'blue' | 'indigo' | 'purple' | 'pink' = Astro.props.color || 'pink';
+const textColor: 'white' | 'black' | 'grey'= Astro.props.textColor || "white";
+---
+<div class="flex justify-end mb-4">
+    <span class={`${bgClasses500[bgColor]} ${textClasses[textColor]} font-bold text-sm font-medium px-2 py-1 rounded flex items-center gap-1`}>
+        {icon && <span set:html={icon}></span>}
+        &nbsp;{text}
+    </span>
+</div>

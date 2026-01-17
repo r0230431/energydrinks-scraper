@@ -1,0 +1,71 @@
+name: Build, Test & Deploy
+defaults:
+  run:
+    working-directory: Deel3-EigenProject/frontend
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build-and-test:
+    timeout-minutes: 60
+    name: "Build & Test"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    - name: Install dependencies
+      run: npm install -g pnpm && pnpm install
+
+    # Install Playwright browsers
+    - name: Install Playwright Browsers
+      run: pnpm exec playwright install
+
+    # Build frontend
+    - name: Build frontend
+      run: pnpm build
+
+    # Upload frontend build as artifact
+    - name: Upload frontend artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: frontend-dist
+        path: Deel3-EigenProject/frontend/dist/
+
+    # Run Playwright tests
+    - name: Run Playwright tests
+      run: pnpm test:e2e
+      continue-on-error: false
+
+    # Upload Playwright report as artifact
+    - name: Upload Playwright report
+      uses: actions/upload-artifact@v4
+      with:
+        name: playwright-report
+        path: Deel3-EigenProject/frontend/playwright-report/
+  
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    steps:
+    
+    # Download frontend artifact
+    - name: Download frontend artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: frontend-dist
+        path: dist
+
+    # Deploy
+    - name: Upload to Combell via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: dist/
+        server-dir: astro-build/

@@ -1,0 +1,12 @@
+---
+import { bgClasses300 } from '../helpers/colors';
+const href: string = Astro.props.href || "#";
+const fact: Number | string = Astro.props.fact || 0;
+const description: string = Astro.props.description || "";
+const bgColor: 'gray' | 'red' | 'yellow' | 'green' | 'blue' | 'indigo' | 'purple' | 'pink' = Astro.props.bgColor || "pink";
+---
+
+<a href={href} class={`${bgClasses300[bgColor]} block max-w-sm p-6 border-3 border-default rounded-base shadow-md text-darkgray text-fg-brand/50 text-center hover:bg-green-100`}>
+    <p class="text-5xl text-gray-500 font-extrabold tracking-tight">{fact}</p>
+    <p class="text-body font-italic">{description}</p>
+</a>

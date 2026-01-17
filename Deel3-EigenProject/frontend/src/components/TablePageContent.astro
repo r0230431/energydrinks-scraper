@@ -1,0 +1,29 @@
+---
+import type { EnergyDrink } from "../models/energyDrink";
+import DrinksTable from "./DrinksTable.astro";
+import { getEnergyDrinksFromFile } from "../helpers/helpers.js";
+
+const tableHeaders: string[] = ['Product name', 'Brand', 'Store', '€/l', 'Promo'];
+let energyDrinksFromFile: EnergyDrink[] = await getEnergyDrinksFromFile();
+const sortedDrinks = energyDrinksFromFile.sort(
+  (a, b) => a.priceInEurPerLiter - b.priceInEurPerLiter
+);
+
+const headerKeyMap: Record<string, string> = {
+    'Product name': 'name',
+    'url': 'url',
+    'Brand': 'brand',
+    'Store': 'store',
+    '€/l': 'priceInEurPerLiter',
+    'Promo': 'promo',
+};
+---
+
+<div class="scroll-mt-20">
+    <div class="container flex flex-col justify-center items-center mx-auto py-12 px-6">
+        <h1 class="mb-4 text-4xl font-bold tracking-tight text-heading text-pink-600 md:text-5xl lg:text-6xl p-8 text-center">
+            Energy drinks - List overview
+        </h1>
+        <DrinksTable headers={tableHeaders} drinks={sortedDrinks} headerKeyMap={headerKeyMap} />
+    </div>
+</div>

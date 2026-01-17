@@ -1,0 +1,20 @@
+{
+	"name": "deel3-eigenproject",
+	"version": "1.0.0",
+	"description": "Eneryg drinks scraper for Colruyt, Delhaize and Carrefour",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/index.js"
+	},
+	"type": "module",
+	"dependencies": {
+		"puppeteer": "^24.27.0",
+		"puppeteer-extra": "^3.3.6",
+		"puppeteer-extra-plugin-stealth": "^2.11.2"
+	},
+	"devDependencies": {
+		"@types/node": "^24.9.2",
+		"typescript": "^5.9.3"
+	}
+}

@@ -1,0 +1,89 @@
+---
+import DrinkCard from "../components/DrinkCard.astro";
+import FilterBtn from "../components/FilterBtn.astro";
+import FactCard from "../components/FactCard.astro";
+import { findEnergyDrinkWithLowestPricePerLiter, getEnergyDrinksFromFile, showPromoProducts } from "../helpers/helpers.js";
+import type { EnergyDrink } from "../models/energyDrink";
+
+const filterOptions: string[] = ['ALL', 'MONSTER', 'RED BULL', 'NALU', 'OTHER'];
+let energyDrinksFromFile: EnergyDrink[] = await getEnergyDrinksFromFile();
+
+---
+
+<div class="scroll-mt-20">
+    <div class="container flex flex-col justify-center items-center mx-auto py-12 px-6">
+        <h1 class="mb-4 text-4xl font-bold tracking-tight text-heading text-pink-600 md:text-5xl lg:text-6xl p-8 text-center">
+            Sugar free energy drinks
+        </h1>
+
+        <div id="factCards" class="grid gap-6 md:grid-cols-3 mb-12">
+            <FactCard href="#drinks" fact={energyDrinksFromFile.length} description="Sugar free energy drinks" bgColor="pink"/>
+            <FactCard href="/astro-build/promoPage/#promoDrinks" fact={showPromoProducts(energyDrinksFromFile).length} description="Energy drinks in promo" bgColor="purple"/>
+            <FactCard href="/astro-build/promoPage/#lowestPriceDrink" fact={`€ ${findEnergyDrinkWithLowestPricePerLiter(energyDrinksFromFile)?.priceInEurPerLiter.toString().replace('.', ',') ?? '-'}`} description="Lowest price per liter" bgColor="indigo"/>
+        </div>
+
+        <div id="filterButtons" class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8">
+            {filterOptions.map(option => (
+                <FilterBtn filterTxt={option} count={energyDrinksFromFile.filter(drink => {
+                    if (option === 'ALL') return true;
+                    if (option === 'MONSTER' || option === 'RED BULL' || option === 'NALU') {
+                        return drink.brand?.toUpperCase() === option;
+                    }
+                    if (option === 'OTHER') {
+                        return !['MONSTER', 'RED BULL', 'NALU'].includes(drink.brand?.toUpperCase() ?? '');
+                    }
+                    return drink.brand?.toUpperCase() === option;
+                }).length} />
+            ))}
+        </div>
+
+        <div id="noDrinksAlert" class="hidden w-full flex justify-center items-center p-4 my-4 text-sm text-fg-danger-strong rounded-base bg-danger-soft" role="alert">
+            <p class="text-lg">No energy drinks available.</p>
+        </div>
+
+        <div id="drinks" class="flex flex-col md:flex-row md:flex-wrap gap-6 justify-center">
+            {(energyDrinksFromFile !== null && energyDrinksFromFile.length !== 0) &&
+                (
+                    energyDrinksFromFile.map((drink) => (
+                        <DrinkCard energyDrink={drink} />
+                    ))
+                )
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>("#filterButtons button");
+    const cards = document.querySelectorAll<HTMLElement>(".drinkCard");
+    const alert = document.getElementById("noDrinksAlert");
+
+    function updateAlertVisibility() {
+        const anyVisible = Array.from(cards).some(card => !card.classList.contains("hidden"));
+        alert?.classList.toggle("hidden", anyVisible);
+    }
+
+    updateAlertVisibility();
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const filter = btn.dataset.filter?.toUpperCase();
+
+            cards.forEach(card => {
+                const brand = card.dataset.brand?.toUpperCase() || "";
+                    if (filter === "ALL") {
+                        card.classList.remove("hidden");
+                    } else if (filter === "OTHER") {
+                        if (!["MONSTER", "RED BULL", "NALU"].includes(brand)) {
+                            card.classList.remove("hidden");
+                        } else {
+                            card.classList.add("hidden");
+                        }
+                    } else {
+                        card.classList.toggle("hidden", brand !== filter);
+                    }
+                });
+                updateAlertVisibility();
+            });
+        });
+</script>
