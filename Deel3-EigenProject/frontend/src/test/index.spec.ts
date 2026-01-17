@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import type { Locator } from '@playwright/test';
-import energyDrinks from '../data/energyDrinks.json' with { type: 'json' };
+import energyDrinks from '../../public/data/energyDrinks.json' with { type: 'json' };
 import type { EnergyDrink } from '../models/energyDrink';
 
 const filterOptions: string[] = ['ALL', 'MONSTER', 'RED BULL', 'NALU', 'OTHER'];
