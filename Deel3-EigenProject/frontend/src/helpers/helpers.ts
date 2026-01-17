@@ -28,9 +28,8 @@ export async function getEnergyDrinksFromFile(): Promise<EnergyDrink[]> {
     // Check if we're in a browser environment
     const isBrowser = typeof window !== "undefined";
     
-    let url: string;
-    
     if (isBrowser) {
+        // Client-side: use fetch with appropriate URL
         const isLocalhost = 
             window.location.hostname === "localhost" || 
             window.location.hostname === "127.0.0.1";
@@ -38,27 +37,40 @@ export async function getEnergyDrinksFromFile(): Promise<EnergyDrink[]> {
         const isElsvrPortfolio = 
             window.location.hostname.includes("elsvr-portfolio.be");
         
-        url = isLocalhost
+        const url = isLocalhost
             ? "/astro-build/data/energyDrinks.json"
             : isElsvrPortfolio
             ? "https://www.elsvr-portfolio.be/astro-build/data/energyDrinks.json"
             : "/astro-build/data/energyDrinks.json";
-    } else {
-        url = "http://localhost:4322/astro-build/data/energyDrinks.json";
-    }
 
-    try {
-        const response = await fetch(url);
+        console.log("Client-side: Trying to fetch from URL:", url);
 
-        if (!response.ok) {
-            console.error('Failed to fetch energyDrinks.json:', response.status);
+        try {
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                console.error('Failed to fetch energyDrinks.json:', response.status);
+                return [];
+            }
+
+            const data = await response.json();
+            console.log("Successfully loaded", data.length, "energy drinks");
+            return Array.isArray(data) ? (data as EnergyDrink[]) : [];
+
+        } catch (e) {
+            console.error("Failed to load energyDrinks.json", e);
             return [];
         }
-
-        const data = await response.json();
-        return Array.isArray(data) ? (data as EnergyDrink[]) : [];
-    } catch (e) {
-        console.error("Failed to load energyDrinks.json", e);
-        return [];
+    } else {
+        try {
+            const { default: data } = await import('../../public/data/energyDrinks.json', {
+                with: { type: 'json' }
+            });
+            console.log("Server-side: Successfully loaded", data.length, "energy drinks");
+            return Array.isArray(data) ? (data as EnergyDrink[]) : [];
+        } catch (e) {
+            console.error("Failed to import energyDrinks.json on server side", e);
+            return [];
+        }
     }
 }
