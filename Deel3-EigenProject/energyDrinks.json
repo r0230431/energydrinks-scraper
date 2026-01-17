@@ -1,0 +1,280 @@
+[
+  {
+    "name": "MONSTER Zero Sugar Energ.Ultra blik",
+    "brand": "MONSTER",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 3.34,
+    "volumeInLiter": 0.5,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/41517",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/49/76/asset-2294976.jpg",
+    "promo": "-25% vanaf 8 st met Xtra"
+  },
+  {
+    "name": "MONSTER Zero Sugar",
+    "brand": "MONSTER",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 3.34,
+    "volumeInLiter": 0.5,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/35823",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/74/71/asset-3497471.jpg",
+    "promo": "-25% vanaf 8 st met Xtra"
+  },
+  {
+    "name": "MONSTER Zero Sugar Top Speed",
+    "brand": "MONSTER",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 3.34,
+    "volumeInLiter": 0.5,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/23510",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/74/72/asset-3977472.jpg",
+    "promo": "-25% vanaf 8 st met Xtra"
+  },
+  {
+    "name": "NALU energiedrank",
+    "brand": "NALU",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 4.36,
+    "volumeInLiter": 0.25,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/5470",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/49/75/asset-2294975.jpg"
+  },
+  {
+    "name": "NALU Exotic",
+    "brand": "NALU",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 6,
+    "volumeInLiter": 0.25,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/23270",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/52/56/asset-2295256.jpg",
+    "promo": "1,44 vanaf 24 st - 5,76/l"
+  },
+  {
+    "name": "NALU Yuzu Rosemary",
+    "brand": "NALU",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 6,
+    "volumeInLiter": 0.25,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/24081",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/22/61/asset-3582261.jpg",
+    "promo": "1,44 vanaf 24 st - 5,76/l"
+  },
+  {
+    "name": "RED BULL Sugarfree energiedrank",
+    "brand": "RED BULL",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 4.4,
+    "volumeInLiter": 0.25,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/5355",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/95/76/asset-389576.jpg"
+  },
+  {
+    "name": "RODEO energiedrank Zero blik",
+    "brand": "RODEO",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 1.98,
+    "volumeInLiter": 0.25,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/5550",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/80/24/asset-928024.jpg",
+    "promo": "0,455 vanaf 24 st - 1,82/l"
+  },
+  {
+    "name": "CARA NRG Zero Sugar blik",
+    "brand": "CARA",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 1.4,
+    "volumeInLiter": 0.25,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/39152",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/09/76/asset-3920976.jpg"
+  },
+  {
+    "name": "RED BULL The Pink Edition Sugarfree",
+    "brand": "RED BULL",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 6.76,
+    "volumeInLiter": 0.25,
+    "store": "Colruyt",
+    "url": "https://www.colruyt.be/nl/producten/18696",
+    "imageUrl": "https://static.colruytgroup.com/images/200x200/std.lang.all/73/25/asset-3977325.jpg",
+    "promo": "1,62 vanaf 24 st - 6,48/l"
+  },
+  {
+    "name": "NALU | Energiedrank | Fruity energizer | Blik",
+    "brand": "NALU",
+    "numberOfCans": 6,
+    "priceInEurPerLiter": 4.46,
+    "volumeInLiter": 0.25,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Energiedrank-Fruity-energizer-Blik/p/S2012050700921920001",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/products/h4c/h27/13288915828766.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "RED BULL | Energy Drink | Sugarfree | 6-Pack | 25 cl",
+    "brand": "RED BULL",
+    "numberOfCans": 6,
+    "priceInEurPerLiter": 5.19,
+    "volumeInLiter": 0.25,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Energy-Drink-Sugarfree-6-Pack-25-cl/p/S2017010603193230098",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/h70/h35/12565906751518.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "NALU | Energiedrank | Fruity energizer | Blik",
+    "brand": "NALU",
+    "numberOfCans": 6,
+    "priceInEurPerLiter": 4.94,
+    "volumeInLiter": 0.33,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Energiedrank-Fruity-energizer-Blik/p/S2022071500640170099",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/h56/h9d/12569554878494.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "RED BULL | Energy Drink | Zero | 4-Pack | 25 cl",
+    "brand": "RED BULL",
+    "numberOfCans": 4,
+    "priceInEurPerLiter": 5.35,
+    "volumeInLiter": 0.25,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Energy-Drink-Zero-4-Pack-25-cl/p/S2020031100406320099",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/products/h1c/h73/12960878231582.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "NALU | Energiedrank | Fruity energizer | Blik",
+    "brand": "NALU",
+    "numberOfCans": 6,
+    "priceInEurPerLiter": 6.33,
+    "volumeInLiter": 0.25,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Energiedrank-Fruity-energizer-Blik/p/S2017020900921980000",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/products/h2c/h58/13288898527262.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "NALU | Energiedrank | Fruity energizer | Blik",
+    "brand": "NALU",
+    "numberOfCans": 6,
+    "priceInEurPerLiter": 6.33,
+    "volumeInLiter": 0.25,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Energiedrank-Fruity-energizer-Blik/p/S2015110400921940099",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/products/h22/h95/13288954036254.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "NALU | Energiedrank | Fruity energizer | Blik",
+    "brand": "NALU",
+    "numberOfCans": 6,
+    "priceInEurPerLiter": 6.33,
+    "volumeInLiter": 0.25,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Energiedrank-Fruity-energizer-Blik/p/S2018012200018450099",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/products/h4f/h36/13289026912286.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "MONSTER | Energiedrank | Zero | Louis Hamilton",
+    "brand": "MONSTER",
+    "numberOfCans": 1,
+    "priceInEurPerLiter": 3.58,
+    "volumeInLiter": 0.5,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Energiedrank-Zero-Louis-Hamilton/p/S2022120900664800000",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/h1a/h7f/12565961343006.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "NALU | Limonade | Yuzu",
+    "brand": "NALU",
+    "numberOfCans": 6,
+    "priceInEurPerLiter": 6.33,
+    "volumeInLiter": 0.25,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Limonade-Yuzu/p/S2024031100757570099",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/h9f/h1b/12568099127326.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "NALU | Zero Sugar | Energiser",
+    "brand": "NALU",
+    "numberOfCans": 6,
+    "priceInEurPerLiter": 5.13,
+    "volumeInLiter": 0.25,
+    "store": "Delhaize",
+    "url": "https://www.delhaize.be/nl//nl/shop/Koude-en-warme-dranken/Frisdrank/Energiedrank/Zero-Sugar-Energiser/p/S2025042200851860099",
+    "imageUrl": "https://static.delhaize.be/medias/sys_master/products/h63/h40/13136061497374.jpg?buildNumber=b96777fc96399d8a9625253d70ba56ebea5d91b6ca6bf001e367c421f7365bf9&imwidth=300"
+  },
+  {
+    "name": "Monster Energy zero sugar bel",
+    "brand": "MONSTER",
+    "numberOfCans": 1,
+    "volumeInLiter": 0.5,
+    "priceInEurPerLiter": 3.38,
+    "store": "Albert Heijn",
+    "url": "https://www.ah.be/producten/product/wi568153/monster-energy-zero-sugar-bel",
+    "imageUrl": "https://static.ah.nl/dam/product/AHI_5968694e4d6467535346474138356a495a3070673667?revLabel=1&rendition=200x200_JPG_Q85&fileType=binary",
+    "promo": "8 voor 9.99"
+  },
+  {
+    "name": "Nalu Energy 6bl bel",
+    "brand": "NALU",
+    "numberOfCans": 6,
+    "volumeInLiter": 0.25,
+    "priceInEurPerLiter": 4.39,
+    "store": "Albert Heijn",
+    "url": "https://www.ah.be/producten/product/wi226923/nalu-energy-6bl-bel",
+    "imageUrl": "https://static.ah.nl/dam/product/AHI_34747479316f5a50536d795061796e52446176326451?revLabel=1&rendition=200x200_JPG_Q85&fileType=binary"
+  },
+  {
+    "name": "Red Bull Sugar free bel",
+    "brand": "RED BULL",
+    "numberOfCans": 1,
+    "volumeInLiter": 0.25,
+    "priceInEurPerLiter": 5.16,
+    "store": "Albert Heijn",
+    "url": "https://www.ah.be/producten/product/wi555289/red-bull-sugar-free-bel",
+    "imageUrl": "https://static.ah.nl/dam/product/AHI_4354523130303231323732?revLabel=1&rendition=200x200_JPG_Q85&fileType=binary"
+  },
+  {
+    "name": "Red Bull Zero calories bel",
+    "brand": "RED BULL",
+    "numberOfCans": 1,
+    "volumeInLiter": 0.25,
+    "priceInEurPerLiter": 5,
+    "store": "Albert Heijn",
+    "url": "https://www.ah.be/producten/product/wi555292/red-bull-zero-calories-bel",
+    "imageUrl": "https://static.ah.nl/dam/product/AHI_4354523130313230303439?revLabel=1&rendition=200x200_JPG_Q85&fileType=binary"
+  },
+  {
+    "name": "Red Bull Sugarfree pink edition bel",
+    "brand": "RED BULL",
+    "numberOfCans": 1,
+    "volumeInLiter": 0.25,
+    "priceInEurPerLiter": 7.96,
+    "store": "Albert Heijn",
+    "url": "https://www.ah.be/producten/product/wi588083/red-bull-sugarfree-pink-edition-bel",
+    "imageUrl": "https://static.ah.nl/dam/product/AHI_4354523130313334303239?revLabel=1&rendition=200x200_JPG_Q85&fileType=binary"
+  },
+  {
+    "name": "Red Bull Pink edition sugarfree bosvrucht 12-pack",
+    "brand": "RED BULL",
+    "numberOfCans": 12,
+    "volumeInLiter": 3,
+    "priceInEurPerLiter": 6.23,
+    "store": "Albert Heijn",
+    "url": "https://www.ah.be/producten/product/wi600293/red-bull-pink-edition-sugarfree-bosvrucht-12-pack",
+    "imageUrl": "https://static.ah.nl/dam/product/AHI_4354523130313338333035?revLabel=1&rendition=200x200_JPG_Q85&fileType=binary"
+  },
+  {
+    "name": "Red Bull Green edition sugarfree curuba 12-pack",
+    "brand": "RED BULL",
+    "numberOfCans": 12,
+    "volumeInLiter": 3,
+    "priceInEurPerLiter": 6.23,
+    "store": "Albert Heijn",
+    "url": "https://www.ah.be/producten/product/wi600296/red-bull-green-edition-sugarfree-curuba-12-pack",
+    "imageUrl": "https://static.ah.nl/dam/product/AHI_4354523130313239343531?revLabel=1&rendition=200x200_JPG_Q85&fileType=binary"
+  }
+]
